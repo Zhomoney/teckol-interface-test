@@ -1,0 +1,76 @@
+{
+  "uid" : "4c9df7c7f894a0e2",
+  "name" : "创作者分页数据，查询平台+达人名称",
+  "fullName" : "testcase#test_case_exec",
+  "historyId" : "3cb96e6212ae80ce1e9eec13cb6dc5e6",
+  "time" : {
+    "start" : 1676971771794,
+    "stop" : 1676971774542,
+    "duration" : 2748
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "174b845ab300bb11",
+      "name" : "stdout",
+      "source" : "174b845ab300bb11.txt",
+      "type" : "text/plain",
+      "size" : 254
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "/creatorBase/page"
+  }, {
+    "name" : "suite",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "SK-20220714XDVX"
+  }, {
+    "name" : "thread",
+    "value" : "13476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_info",
+    "value" : "{'id': 26, 'name': '创作者分页数据，查询平台+达人名称', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': 'Zach King', 'page': True, 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.name=Zach King;', 'setDown': None, 'successCount': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4c9df7c7f894a0e2.json",
+  "parameterValues" : [ "{'id': 26, 'name': '创作者分页数据，查询平台+达人名称', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': 'Zach King', 'page': True, 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.name=Zach King;', 'setDown': None, 'successCount': None}" ]
+}

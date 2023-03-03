@@ -1,0 +1,311 @@
+[ {
+  "uid" : "942bc76b8f289f60",
+  "name" : "创作者分页数据，查询平台+达人uniqueId",
+  "time" : {
+    "start" : 1676971774545,
+    "stop" : 1676971776543,
+    "duration" : 1998
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "256629d42beb55f7",
+  "name" : "登录的手机号码在数据库中有多个，接口返回10000，引导用户使用邮箱登录",
+  "time" : {
+    "start" : 1676971748337,
+    "stop" : 1676971748435,
+    "duration" : 98
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c9df7c7f894a0e2",
+  "name" : "创作者分页数据，查询平台+达人名称",
+  "time" : {
+    "start" : 1676971771794,
+    "stop" : 1676971774542,
+    "duration" : 2748
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6498e1625ae4dfb",
+  "name" : "IP_adStaff角色登录，账密正确，登录成功。",
+  "time" : {
+    "start" : 1676971746966,
+    "stop" : 1676971747453,
+    "duration" : 487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d32271837bcb901",
+  "name" : "创作者分页数据，只查询平台youtube",
+  "time" : {
+    "start" : 1676971752595,
+    "stop" : 1676971753697,
+    "duration" : 1102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94bc333b4b497ac0",
+  "name" : "创作者分页数据，只查询平台instagram",
+  "time" : {
+    "start" : 1676971753701,
+    "stop" : 1676971754486,
+    "duration" : 785
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "45f92f83902a4f44",
+  "name" : "工作台获取交易信息，检查邮件个数、offer个数、Trade个数",
+  "time" : {
+    "start" : 1676971750224,
+    "stop" : 1676971750869,
+    "duration" : 645
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "91f62ab2336f3d68",
+  "name" : "创作者分页数据，只查询平台amazon",
+  "time" : {
+    "start" : 1676971755831,
+    "stop" : 1676971761828,
+    "duration" : 5997
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bb241e0b293fef4",
+  "name" : "登录的密码错误，接口返回10000，提示账号密码错误",
+  "time" : {
+    "start" : 1676971748140,
+    "stop" : 1676971748235,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d81c9e39a2bb39b8",
+  "name" : "登录的手机号在数据库中不存在，接口返回10000，引导注册",
+  "time" : {
+    "start" : 1676971748038,
+    "stop" : 1676971748137,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1c657efcdeadf0",
+  "name" : "创作者分页数据，查询平台+粉丝数",
+  "time" : {
+    "start" : 1676971767206,
+    "stop" : 1676971770096,
+    "duration" : 2890
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5962a948dcdf48b",
+  "name" : "查询私域创作者(平台=tiktok",
+  "time" : {
+    "start" : 1676971778431,
+    "stop" : 1676971779583,
+    "duration" : 1152
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9349046b4a67dbe3",
+  "name" : "创作者分页数据，查询平台+多地区",
+  "time" : {
+    "start" : 1676971764891,
+    "stop" : 1676971765998,
+    "duration" : 1107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da75ead325639842",
+  "name" : "创作者分页数据，查询平台达人类型",
+  "time" : {
+    "start" : 1676971766003,
+    "stop" : 1676971767198,
+    "duration" : 1195
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea3723199cff677e",
+  "name" : "IP_adLeader角色登录，账密正确，登录成功。",
+  "time" : {
+    "start" : 1676971746202,
+    "stop" : 1676971746963,
+    "duration" : 761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52d4dc88e88011db",
+  "name" : "创作者分页数据，查询平台+单地区",
+  "time" : {
+    "start" : 1676971761832,
+    "stop" : 1676971764888,
+    "duration" : 3056
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "328c8cf732a6c520",
+  "name" : "enterprise_member角色登录，账密正确，登录成功。",
+  "time" : {
+    "start" : 1676971747456,
+    "stop" : 1676971747937,
+    "duration" : 481
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f12cd697d80aa1fc",
+  "name" : "获取offer，检查offer信息",
+  "time" : {
+    "start" : 1676971749372,
+    "stop" : 1676971750109,
+    "duration" : 737
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "83478680c718a8c9",
+  "name" : "获取用户配额数量检查",
+  "time" : {
+    "start" : 1676971750878,
+    "stop" : 1676971751467,
+    "duration" : 589
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26e14d6b730462d3",
+  "name" : "登录的手机号码在数据库中有多个，接口返回10000，引导用户使用邮箱登录",
+  "time" : {
+    "start" : 1676971748238,
+    "stop" : 1676971748334,
+    "duration" : 96
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "879e36a98476daa8",
+  "name" : "创作者分页数据，只查询平台facebook",
+  "time" : {
+    "start" : 1676971755211,
+    "stop" : 1676971755828,
+    "duration" : 617
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4686607a136dba6e",
+  "name" : "IP_adv角色登录，账密正确，登录成功。",
+  "time" : {
+    "start" : 1676971744418,
+    "stop" : 1676971744931,
+    "duration" : 513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c1bc50180e809d7",
+  "name" : "创作者分页数据，查询系统存在的达人（平台+地区+达人名称+粉丝数+达人类型+互动率",
+  "time" : {
+    "start" : 1676971776546,
+    "stop" : 1676971777771,
+    "duration" : 1225
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "191f9674b3305a55",
+  "name" : "查询单个私域创作者",
+  "time" : {
+    "start" : 1676971779592,
+    "stop" : 1676971780019,
+    "duration" : 427
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6f6c44c0621e5d85",
+  "name" : "创作者分页数据，查询平台+互动率",
+  "time" : {
+    "start" : 1676971770100,
+    "stop" : 1676971771784,
+    "duration" : 1684
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3172ee64d908f79",
+  "name" : "创作者分页数据，查询系统不存在的达人（平台+地区+达人名称+粉丝数+达人类型+互动率",
+  "time" : {
+    "start" : 1676971777774,
+    "stop" : 1676971778428,
+    "duration" : 654
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92e23aaa9eb4d716",
+  "name" : "登录的邮箱在数据库中不存在，接口返回10000，引导注册",
+  "time" : {
+    "start" : 1676971747940,
+    "stop" : 1676971748036,
+    "duration" : 96
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df0a244b65ad4128",
+  "name" : "professional_member角色登录，账密正确，登录成功。",
+  "time" : {
+    "start" : 1676971744934,
+    "stop" : 1676971746199,
+    "duration" : 1265
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67f5930837d0418",
+  "name" : "创作者分页数据，只查询平台twitch",
+  "time" : {
+    "start" : 1676971754500,
+    "stop" : 1676971755198,
+    "duration" : 698
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3884dff64f75fd72",
+  "name" : "创作者分页数据，只查询平台tiktok",
+  "time" : {
+    "start" : 1676971751471,
+    "stop" : 1676971752592,
+    "duration" : 1121
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1e38af2b841d83b",
+  "name" : "获取IP_adv角色个人信息正确",
+  "time" : {
+    "start" : 1676971748437,
+    "stop" : 1676971749369,
+    "duration" : 932
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

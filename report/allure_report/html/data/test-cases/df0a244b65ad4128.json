@@ -1,0 +1,76 @@
+{
+  "uid" : "df0a244b65ad4128",
+  "name" : "professional_member角色登录，账密正确，登录成功。",
+  "fullName" : "testcase#test_case_exec",
+  "historyId" : "009e29abd56b772a006f7f82e34a4ade",
+  "time" : {
+    "start" : 1676971744934,
+    "stop" : 1676971746199,
+    "duration" : 1265
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5b7268d48a4378c7",
+      "name" : "stdout",
+      "source" : "5b7268d48a4378c7.txt",
+      "type" : "text/plain",
+      "size" : 148
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "/user/login/adv"
+  }, {
+    "name" : "suite",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "SK-20220714XDVX"
+  }, {
+    "name" : "thread",
+    "value" : "13476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_info",
+    "value" : "{'id': 2, 'name': 'professional_member角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_professional_member@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_professional_member@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_professional_member@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_professional_member@tec-do.com}]);', 'setDown': None, 'successCount': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "df0a244b65ad4128.json",
+  "parameterValues" : [ "{'id': 2, 'name': 'professional_member角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_professional_member@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_professional_member@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_professional_member@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_professional_member@tec-do.com}]);', 'setDown': None, 'successCount': None}" ]
+}

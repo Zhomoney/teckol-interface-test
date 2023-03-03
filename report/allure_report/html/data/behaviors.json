@@ -1,0 +1,532 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "IP_adv角色登录，账密正确，登录成功。",
+    "uid" : "4686607a136dba6e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971744418,
+      "stop" : 1676971744931,
+      "duration" : 513
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 1, 'name': 'IP_adv角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);set(IPAdv_Id,res.data.id,global);set(IPAdv_groupId,res.data.groupId,global);set(IPAdv_email,res.data.email,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_IP_adv@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_IP_adv@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_IP_adv@tec-do.com}]);res.data.emailFlag=sqlSearch(users.email_flag,[{email=test_IP_adv@tec-do.com}]);res.data.phoneFlag=sqlSearch(users.phone_flag,[{email=test_IP_adv@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_IP_adv@tec-do.com}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "professional_member角色登录，账密正确，登录成功。",
+    "uid" : "df0a244b65ad4128",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971744934,
+      "stop" : 1676971746199,
+      "duration" : 1265
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 2, 'name': 'professional_member角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_professional_member@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_professional_member@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_professional_member@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_professional_member@tec-do.com}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "IP_adLeader角色登录，账密正确，登录成功。",
+    "uid" : "ea3723199cff677e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971746202,
+      "stop" : 1676971746963,
+      "duration" : 761
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 3, 'name': 'IP_adLeader角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_IP_adLeader@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_IP_adLeader@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_IP_adLeader@tec-do.com}]);res.data.emailFlag=sqlSearch(users.email_flag,[{email=test_IP_adLeader@tec-do.com}]);res.data.phoneFlag=sqlSearch(users.phone_flag,[{email=test_IP_adLeader@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_IP_adLeader@tec-do.com}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "IP_adStaff角色登录，账密正确，登录成功。",
+    "uid" : "c6498e1625ae4dfb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971746966,
+      "stop" : 1676971747453,
+      "duration" : 487
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 4, 'name': 'IP_adStaff角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_IP_adStaff@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_IP_adStaff@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_IP_adStaff@tec-do.com}]);res.data.emailFlag=sqlSearch(users.email_flag,[{email=test_IP_adStaff@tec-do.com}]);res.data.phoneFlag=sqlSearch(users.phone_flag,[{email=test_IP_adStaff@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_IP_adStaff@tec-do.com}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "enterprise_member角色登录，账密正确，登录成功。",
+    "uid" : "328c8cf732a6c520",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971747456,
+      "stop" : 1676971747937,
+      "duration" : 481
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 5, 'name': 'enterprise_member角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_enterprise_member@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_enterprise_member@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_enterprise_member@tec-do.com}]);res.data.emailFlag=sqlSearch(users.email_flag,[{email=test_enterprise_member@tec-do.com}]);res.data.phoneFlag=sqlSearch(users.phone_flag,[{email=test_enterprise_member@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_enterprise_member@tec-do.com}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "登录的邮箱在数据库中不存在，接口返回10000，引导注册",
+    "uid" : "92e23aaa9eb4d716",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971747940,
+      "stop" : 1676971748036,
+      "duration" : 96
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 6, 'name': '登录的邮箱在数据库中不存在，接口返回10000，引导注册', 'remark': None, 'VariableOperation': None, 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_IP_adv@tec-do.comf', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=10000;res.msg=用户名不存在，请先注册;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "登录的手机号在数据库中不存在，接口返回10000，引导注册",
+    "uid" : "d81c9e39a2bb39b8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971748038,
+      "stop" : 1676971748137,
+      "duration" : 99
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 7, 'name': '登录的手机号在数据库中不存在，接口返回10000，引导注册', 'remark': None, 'VariableOperation': None, 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': '13112243465', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=10000;res.msg=用户名不存在，请先注册;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "登录的密码错误，接口返回10000，提示账号密码错误",
+    "uid" : "9bb241e0b293fef4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971748140,
+      "stop" : 1676971748235,
+      "duration" : 95
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 8, 'name': '登录的密码错误，接口返回10000，提示账号密码错误', 'remark': None, 'VariableOperation': None, 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_IP_adv@tec-do.com', 'password': '1234576'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=10000;res.msg=账号密码错误;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "登录的手机号码在数据库中有多个，接口返回10000，引导用户使用邮箱登录",
+    "uid" : "26e14d6b730462d3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971748238,
+      "stop" : 1676971748334,
+      "duration" : 96
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 9, 'name': '登录的手机号码在数据库中有多个，接口返回10000，引导用户使用邮箱登录', 'remark': None, 'VariableOperation': None, 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': '13112345678', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=10000;res.msg=电话号码重复，请使用邮箱登录;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "登录的手机号码在数据库中有多个，接口返回10000，引导用户使用邮箱登录",
+    "uid" : "256629d42beb55f7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971748337,
+      "stop" : 1676971748435,
+      "duration" : 98
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 10, 'name': '登录的手机号码在数据库中有多个，接口返回10000，引导用户使用邮箱登录', 'remark': None, 'VariableOperation': None, 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': '13112345678', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=10000;res.msg=电话号码重复，请使用邮箱登录;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "获取IP_adv角色个人信息正确",
+    "uid" : "d1e38af2b841d83b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971748437,
+      "stop" : 1676971749369,
+      "duration" : 932
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 11, 'name': '获取IP_adv角色个人信息正确', 'remark': None, 'VariableOperation': None, 'interfaceId': 320, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.city=sqlSearch(users.city,[{id=${IPAdv_Id}}]);res.data.companyName=sqlSearch(users.company_name,[{id=${IPAdv_Id}}]);res.data.companyType=sqlSearch(users.company_type,[{id=${IPAdv_Id}}]);res.data.phone=sqlSearch(users.phone,[{id=${IPAdv_Id}}]);res.data.phoneFlag=sqlSearch(users.phone_flag,[{id=${IPAdv_Id}}]);res.data.scaleType=sqlSearch(users.scale_type,[{id=${IPAdv_Id}}]);res.data.username=sqlSearch(users.username,[{id=${IPAdv_Id}}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "获取offer，检查offer信息",
+    "uid" : "f12cd697d80aa1fc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1676971749372,
+      "stop" : 1676971750109,
+      "duration" : 737
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 12, 'name': '获取offer，检查offer信息', 'remark': None, 'VariableOperation': None, 'interfaceId': 50, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'pageSize': 999, 'state': 'UNDERWAY'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.total = sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "工作台获取交易信息，检查邮件个数、offer个数、Trade个数",
+    "uid" : "45f92f83902a4f44",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1676971750224,
+      "stop" : 1676971750869,
+      "duration" : 645
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 13, 'name': '工作台获取交易信息，检查邮件个数、offer个数、Trade个数', 'remark': None, 'VariableOperation': None, 'interfaceId': 55, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.offerNum=sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);res.data.emailNum=sqlSearch(email_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);res.data.orderNum=sqlSearch(tecgo_order.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "获取用户配额数量检查",
+    "uid" : "83478680c718a8c9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971750878,
+      "stop" : 1676971751467,
+      "duration" : 589
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 14, 'name': '获取用户配额数量检查', 'remark': None, 'VariableOperation': None, 'interfaceId': 321, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，只查询平台tiktok",
+    "uid" : "3884dff64f75fd72",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971751471,
+      "stop" : 1676971752592,
+      "duration" : 1121
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 15, 'name': '创作者分页数据，只查询平台tiktok', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，只查询平台youtube",
+    "uid" : "9d32271837bcb901",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971752595,
+      "stop" : 1676971753697,
+      "duration" : 1102
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 16, 'name': '创作者分页数据，只查询平台youtube', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'youtube'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=youtube;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，只查询平台instagram",
+    "uid" : "94bc333b4b497ac0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1676971753701,
+      "stop" : 1676971754486,
+      "duration" : 785
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 17, 'name': '创作者分页数据，只查询平台instagram', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'instagram'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=instagram;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，只查询平台twitch",
+    "uid" : "67f5930837d0418",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1676971754500,
+      "stop" : 1676971755198,
+      "duration" : 698
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 18, 'name': '创作者分页数据，只查询平台twitch', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'twitch'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=twitch;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，只查询平台facebook",
+    "uid" : "879e36a98476daa8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971755211,
+      "stop" : 1676971755828,
+      "duration" : 617
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 19, 'name': '创作者分页数据，只查询平台facebook', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': False, 'platform': 'facebook'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=facebook;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，只查询平台amazon",
+    "uid" : "91f62ab2336f3d68",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971755831,
+      "stop" : 1676971761828,
+      "duration" : 5997
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 20, 'name': '创作者分页数据，只查询平台amazon', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': False, 'platform': 'amazon'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=amazon;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询平台+单地区",
+    "uid" : "52d4dc88e88011db",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971761832,
+      "stop" : 1676971764888,
+      "duration" : 3056
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 21, 'name': '创作者分页数据，查询平台+单地区', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'tiktok', 'regionCodes': ['GB']}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.regionCode=GB;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询平台+多地区",
+    "uid" : "9349046b4a67dbe3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971764891,
+      "stop" : 1676971765998,
+      "duration" : 1107
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 22, 'name': '创作者分页数据，查询平台+多地区', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'tiktok', 'regionCodes': ['GB', 'US']}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.regionCode IN [GB,US];res.data.records.39.regionCode IN [GB,US];', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询平台达人类型",
+    "uid" : "da75ead325639842",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971766003,
+      "stop" : 1676971767198,
+      "duration" : 1195
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 23, 'name': '创作者分页数据，查询平台达人类型', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'tiktok', 'categoryIds': ['4655392329509634049']}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.categoryIds CONTAINS 4655392329509634049;res.data.records.39.categoryIds CONTAINS 4655392329509634049;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询平台+粉丝数",
+    "uid" : "a1c657efcdeadf0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971767206,
+      "stop" : 1676971770096,
+      "duration" : 2890
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 24, 'name': '创作者分页数据，查询平台+粉丝数', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'fansMax': '50000', 'fansMin': '10000', 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.ttFollowers=50000;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询平台+互动率",
+    "uid" : "6f6c44c0621e5d85",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1676971770100,
+      "stop" : 1676971771784,
+      "duration" : 1684
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 25, 'name': '创作者分页数据，查询平台+互动率', 'remark': 'TODO,AssertResBody没写完', 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'interactionRateMax': '20', 'interactionRateMin': '0', 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.ttFollowers=50000;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询平台+达人名称",
+    "uid" : "4c9df7c7f894a0e2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971771794,
+      "stop" : 1676971774542,
+      "duration" : 2748
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 26, 'name': '创作者分页数据，查询平台+达人名称', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': 'Zach King', 'page': True, 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.name=Zach King;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询平台+达人uniqueId",
+    "uid" : "942bc76b8f289f60",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971774545,
+      "stop" : 1676971776543,
+      "duration" : 1998
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 27, 'name': '创作者分页数据，查询平台+达人uniqueId', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': 'zachking', 'page': True, 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.name=Zach King;res.data.records.0.uniqueId=zachking;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询系统存在的达人（平台+地区+达人名称+粉丝数+达人类型+互动率",
+    "uid" : "9c1bc50180e809d7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971776546,
+      "stop" : 1676971777771,
+      "duration" : 1225
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 28, 'name': '创作者分页数据，查询系统存在的达人（平台+地区+达人名称+粉丝数+达人类型+互动率', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': 'zachking', 'page': True, 'fansMin': '1000000', 'interactionRateMax': '20', 'interactionRateMin': '0', 'regionCodes': ['US'], 'categoryIds': ['4655392329509634049'], 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.name=Zach King;res.data.records.0.uniqueId=zachking;res.data.records.0.categoryIds CONTAINS 4655392329509634049;res.data.records.0.regionCode=US;res.data.total=1;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "创作者分页数据，查询系统不存在的达人（平台+地区+达人名称+粉丝数+达人类型+互动率",
+    "uid" : "f3172ee64d908f79",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1676971777774,
+      "stop" : 1676971778428,
+      "duration" : 654
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 29, 'name': '创作者分页数据，查询系统不存在的达人（平台+地区+达人名称+粉丝数+达人类型+互动率', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': 'zachk2ing', 'page': True, 'fansMin': '1000000', 'interactionRateMax': '20', 'interactionRateMin': '0', 'regionCodes': ['US'], 'categoryIds': ['4655392329509634049'], 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.total=0;', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "查询私域创作者(平台=tiktok",
+    "uid" : "c5962a948dcdf48b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1676971778431,
+      "stop" : 1676971779583,
+      "duration" : 1152
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 30, 'name': '查询私域创作者(平台=tiktok', 'remark': None, 'VariableOperation': 'set(private_creatorLink,res.data.records.0.creatorLink);', 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 50, 'privatePlatform': 'tiktok', 'platform': 'private'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.total=sqlSearch(private_creator_base.count(id),[{create_person=${IPAdv_email}},{group_id=${IPAdv_groupId}}]);', 'setDown': None, 'successCount': None}" ]
+  }, {
+    "name" : "查询单个私域创作者",
+    "uid" : "191f9674b3305a55",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1676971779592,
+      "stop" : 1676971780019,
+      "duration" : 427
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "{'id': 31, 'name': '查询单个私域创作者', 'remark': None, 'VariableOperation': None, 'interfaceId': 78, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'url': '${private_creatorLink}'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.id=sqlSearch(private_creator_base,[{create_person=${IPAdv_email}},{group_id=${IPAdv_groupId}},{creator_link=${private_creatorLink}}])', 'setDown': None, 'successCount': None}" ]
+  } ]
+}

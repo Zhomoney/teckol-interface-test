@@ -1,0 +1,76 @@
+{
+  "uid" : "ea3723199cff677e",
+  "name" : "IP_adLeader角色登录，账密正确，登录成功。",
+  "fullName" : "testcase#test_case_exec",
+  "historyId" : "83ac5a7a3a23f710276797ca78ac6034",
+  "time" : {
+    "start" : 1676971746202,
+    "stop" : 1676971746963,
+    "duration" : 761
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9d586607680da58",
+      "name" : "stdout",
+      "source" : "9d586607680da58.txt",
+      "type" : "text/plain",
+      "size" : 274
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "/user/login/adv"
+  }, {
+    "name" : "suite",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "SK-20220714XDVX"
+  }, {
+    "name" : "thread",
+    "value" : "13476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_info",
+    "value" : "{'id': 3, 'name': 'IP_adLeader角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_IP_adLeader@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_IP_adLeader@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_IP_adLeader@tec-do.com}]);res.data.emailFlag=sqlSearch(users.email_flag,[{email=test_IP_adLeader@tec-do.com}]);res.data.phoneFlag=sqlSearch(users.phone_flag,[{email=test_IP_adLeader@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_IP_adLeader@tec-do.com}]);', 'setDown': None, 'successCount': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ea3723199cff677e.json",
+  "parameterValues" : [ "{'id': 3, 'name': 'IP_adLeader角色登录，账密正确，登录成功。', 'remark': None, 'VariableOperation': 'set(cpmsToken,res.data.cpmsToken,global);set(token,res.data.token,global);', 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': 'test_IP_adLeader@tec-do.com', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.data.email=test_IP_adLeader@tec-do.com;res.data.id=sqlSearch(users.id,[{email=test_IP_adLeader@tec-do.com}]);res.data.emailFlag=sqlSearch(users.email_flag,[{email=test_IP_adLeader@tec-do.com}]);res.data.phoneFlag=sqlSearch(users.phone_flag,[{email=test_IP_adLeader@tec-do.com}]);res.data.username=sqlSearch(users.username,[{email=test_IP_adLeader@tec-do.com}]);', 'setDown': None, 'successCount': None}" ]
+}

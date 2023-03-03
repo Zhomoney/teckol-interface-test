@@ -1,0 +1,84 @@
+{
+  "uid" : "f12cd697d80aa1fc",
+  "name" : "获取offer，检查offer信息",
+  "fullName" : "testcase#test_case_exec",
+  "historyId" : "0704764a814a7ff5973b7a939cbd6dbb",
+  "time" : {
+    "start" : 1676971749372,
+    "stop" : 1676971750109,
+    "duration" : 737
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: [value]responseValue:426 not equal to  verifyValue :500",
+  "statusTrace" : "test_info = {'AssertResBody': 'res.code=200;res.data.total = sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}}]);', 'AssertResCode': 200, 'AssertType': 'equal', 'VariableOperation': None, ...}\n\n    @pytest.mark.parametrize('test_info', testCaseList)\n    def test_case_exec(test_info):\n        allure.dynamic.title(test_info['name'])\n        allure.dynamic.description(test_info['remark'])\n    \n        if test_info['commonCaseId']:\n            login(test_info['commonCaseId'])\n        code, method, name = getCode(test_info['interfaceId'])\n        allure.dynamic.suite(code)\n        body, code = getBody(test_info['reqBody'], code)\n        headers = getHeader(test_info['reqHeader'])\n        # 接口请求\n        url = config.BASEURL + code\n        if method == 'get':\n            if not body:\n                body = \"{}\"\n            body = json.loads(body)\n            response = requests.get(url, body, headers=headers)  # 此时的body需要为字典\n        else:\n            response = requests.request(method=method,\n                                        url=url,\n                                        data=body,\n                                        headers=headers)\n        # 校验statusCode\n        assert response.status_code == int(test_info['AssertResCode'])\n        # 校验responseData\n        resData = json.loads(response.text)\n>       verify(test_info['AssertResBody'], resData, 'str equal')\n\ntestcase.py:42: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nverifyMsg = 'res.code=200;res.data.total = sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}}]);'\nresData = {'code': 200, 'data': {'countId': None, 'current': '1', 'hitCount': False, 'maxLimit': None, ...}, 'msg': 'success'}\nOperationType = 'str equal'\n\n    def verify(verifyMsg, resData, OperationType):\n        '''\n        assertBody\n        :param verifyMsg:需要校验的数据str ：'res.data.email=xxx;res.code=xxx;'\n        :param resData: 返回的resData:字典\n        :param type: 暂无用处\n        :return:\n        '''\n        assertList = verifyMsg.split(';')\n        for i in assertList:\n            if i != '':\n                operation = '='\n                if '=' in i:\n                    operation = '='\n                elif ' IN ' in i:\n                    operation = ' IN '\n                elif ' CONTAINS ' in i:\n                    operation = ' CONTAINS '\n                oldKey = i.split(operation, 1)[0].strip()\n                verifyValue = i.split(operation, 1)[1].strip()\n                keyList = oldKey.split('.')\n                # 获取返回要校验的值\n                resValue = iterationValue(keyList, resData)\n                # 替换testcase verify的值\n                verifyValue = variableReplace(verifyValue)\n                if 'sqlSearch(' in verifyValue and ')' == verifyValue[-1]:\n                    verifyValue = SearchSql(verifyValue)\n    \n                if operation == '=':\n                    verifyValue = str(verifyValue)\n                    resValue = str(resValue)\n>                   assert verifyValue == resValue, \"[value]responseValue:\" + str(\n                        resValue) + \" not equal to  verifyValue :\" + str(\nE                       AssertionError: [value]responseValue:426 not equal to  verifyValue :500\n\ncommon.py:163: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: [value]responseValue:426 not equal to  verifyValue :500",
+    "statusTrace" : "test_info = {'AssertResBody': 'res.code=200;res.data.total = sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}}]);', 'AssertResCode': 200, 'AssertType': 'equal', 'VariableOperation': None, ...}\n\n    @pytest.mark.parametrize('test_info', testCaseList)\n    def test_case_exec(test_info):\n        allure.dynamic.title(test_info['name'])\n        allure.dynamic.description(test_info['remark'])\n    \n        if test_info['commonCaseId']:\n            login(test_info['commonCaseId'])\n        code, method, name = getCode(test_info['interfaceId'])\n        allure.dynamic.suite(code)\n        body, code = getBody(test_info['reqBody'], code)\n        headers = getHeader(test_info['reqHeader'])\n        # 接口请求\n        url = config.BASEURL + code\n        if method == 'get':\n            if not body:\n                body = \"{}\"\n            body = json.loads(body)\n            response = requests.get(url, body, headers=headers)  # 此时的body需要为字典\n        else:\n            response = requests.request(method=method,\n                                        url=url,\n                                        data=body,\n                                        headers=headers)\n        # 校验statusCode\n        assert response.status_code == int(test_info['AssertResCode'])\n        # 校验responseData\n        resData = json.loads(response.text)\n>       verify(test_info['AssertResBody'], resData, 'str equal')\n\ntestcase.py:42: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nverifyMsg = 'res.code=200;res.data.total = sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}}]);'\nresData = {'code': 200, 'data': {'countId': None, 'current': '1', 'hitCount': False, 'maxLimit': None, ...}, 'msg': 'success'}\nOperationType = 'str equal'\n\n    def verify(verifyMsg, resData, OperationType):\n        '''\n        assertBody\n        :param verifyMsg:需要校验的数据str ：'res.data.email=xxx;res.code=xxx;'\n        :param resData: 返回的resData:字典\n        :param type: 暂无用处\n        :return:\n        '''\n        assertList = verifyMsg.split(';')\n        for i in assertList:\n            if i != '':\n                operation = '='\n                if '=' in i:\n                    operation = '='\n                elif ' IN ' in i:\n                    operation = ' IN '\n                elif ' CONTAINS ' in i:\n                    operation = ' CONTAINS '\n                oldKey = i.split(operation, 1)[0].strip()\n                verifyValue = i.split(operation, 1)[1].strip()\n                keyList = oldKey.split('.')\n                # 获取返回要校验的值\n                resValue = iterationValue(keyList, resData)\n                # 替换testcase verify的值\n                verifyValue = variableReplace(verifyValue)\n                if 'sqlSearch(' in verifyValue and ')' == verifyValue[-1]:\n                    verifyValue = SearchSql(verifyValue)\n    \n                if operation == '=':\n                    verifyValue = str(verifyValue)\n                    resValue = str(resValue)\n>                   assert verifyValue == resValue, \"[value]responseValue:\" + str(\n                        resValue) + \" not equal to  verifyValue :\" + str(\nE                       AssertionError: [value]responseValue:426 not equal to  verifyValue :500\n\ncommon.py:163: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e562112c0b58de03",
+      "name" : "stdout",
+      "source" : "e562112c0b58de03.txt",
+      "type" : "text/plain",
+      "size" : 307
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "/advertiser/offer/page"
+  }, {
+    "name" : "suite",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "SK-20220714XDVX"
+  }, {
+    "name" : "thread",
+    "value" : "13476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_info",
+    "value" : "{'id': 12, 'name': '获取offer，检查offer信息', 'remark': None, 'VariableOperation': None, 'interfaceId': 50, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'pageSize': 999, 'state': 'UNDERWAY'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.total = sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}}]);', 'setDown': None, 'successCount': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f12cd697d80aa1fc.json",
+  "parameterValues" : [ "{'id': 12, 'name': '获取offer，检查offer信息', 'remark': None, 'VariableOperation': None, 'interfaceId': 50, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'pageSize': 999, 'state': 'UNDERWAY'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.total = sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}}]);', 'setDown': None, 'successCount': None}" ]
+}

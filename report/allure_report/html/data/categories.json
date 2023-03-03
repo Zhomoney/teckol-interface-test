@@ -1,0 +1,152 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: [value]responseValue:426 not equal to  verifyValue :500",
+      "children" : [ {
+        "name" : "获取offer，检查offer信息",
+        "uid" : "f12cd697d80aa1fc",
+        "parentUid" : "600774303ed8908daf20905b39ea45e8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1676971749372,
+          "stop" : 1676971750109,
+          "duration" : 737
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 12, 'name': '获取offer，检查offer信息', 'remark': None, 'VariableOperation': None, 'interfaceId': 50, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'pageSize': 999, 'state': 'UNDERWAY'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.total = sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}}]);', 'setDown': None, 'successCount': None}" ]
+      }, {
+        "name" : "工作台获取交易信息，检查邮件个数、offer个数、Trade个数",
+        "uid" : "45f92f83902a4f44",
+        "parentUid" : "600774303ed8908daf20905b39ea45e8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1676971750224,
+          "stop" : 1676971750869,
+          "duration" : 645
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 13, 'name': '工作台获取交易信息，检查邮件个数、offer个数、Trade个数', 'remark': None, 'VariableOperation': None, 'interfaceId': 55, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.offerNum=sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);res.data.emailNum=sqlSearch(email_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);res.data.orderNum=sqlSearch(tecgo_order.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);', 'setDown': None, 'successCount': None}" ]
+      } ],
+      "uid" : "600774303ed8908daf20905b39ea45e8"
+    }, {
+      "name" : "AssertionError: 0 not in [],please check testcase of assertBody or submit a bug to the developer",
+      "children" : [ {
+        "name" : "创作者分页数据，只查询平台instagram",
+        "uid" : "94bc333b4b497ac0",
+        "parentUid" : "3667806bf30d86e609842eb9fa431f58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1676971753701,
+          "stop" : 1676971754486,
+          "duration" : 785
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 17, 'name': '创作者分页数据，只查询平台instagram', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'instagram'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=instagram;', 'setDown': None, 'successCount': None}" ]
+      }, {
+        "name" : "创作者分页数据，只查询平台twitch",
+        "uid" : "67f5930837d0418",
+        "parentUid" : "3667806bf30d86e609842eb9fa431f58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1676971754500,
+          "stop" : 1676971755198,
+          "duration" : 698
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 18, 'name': '创作者分页数据，只查询平台twitch', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'twitch'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=twitch;', 'setDown': None, 'successCount': None}" ]
+      } ],
+      "uid" : "3667806bf30d86e609842eb9fa431f58"
+    }, {
+      "name" : "AssertionError: [value]responseValue:149852043 not equal to  verifyValue :50000",
+      "children" : [ {
+        "name" : "创作者分页数据，查询平台+互动率",
+        "uid" : "6f6c44c0621e5d85",
+        "parentUid" : "d320c6be56cbb2d4efb85b820d9090d9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1676971770100,
+          "stop" : 1676971771784,
+          "duration" : 1684
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 25, 'name': '创作者分页数据，查询平台+互动率', 'remark': 'TODO,AssertResBody没写完', 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'interactionRateMax': '20', 'interactionRateMin': '0', 'platform': 'tiktok'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.ttFollowers=50000;', 'setDown': None, 'successCount': None}" ]
+      } ],
+      "uid" : "d320c6be56cbb2d4efb85b820d9090d9"
+    }, {
+      "name" : "AssertionError: [value]responseValue:84 not equal to  verifyValue :112",
+      "children" : [ {
+        "name" : "查询私域创作者(平台=tiktok",
+        "uid" : "c5962a948dcdf48b",
+        "parentUid" : "89c3301c65bc36e89606dae3b54a6858",
+        "status" : "failed",
+        "time" : {
+          "start" : 1676971778431,
+          "stop" : 1676971779583,
+          "duration" : 1152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 30, 'name': '查询私域创作者(平台=tiktok', 'remark': None, 'VariableOperation': 'set(private_creatorLink,res.data.records.0.creatorLink);', 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 50, 'privatePlatform': 'tiktok', 'platform': 'private'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.total=sqlSearch(private_creator_base.count(id),[{create_person=${IPAdv_email}},{group_id=${IPAdv_groupId}}]);', 'setDown': None, 'successCount': None}" ]
+      } ],
+      "uid" : "89c3301c65bc36e89606dae3b54a6858"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: replace() argument 2 must be str, not None",
+      "children" : [ {
+        "name" : "查询单个私域创作者",
+        "uid" : "191f9674b3305a55",
+        "parentUid" : "8f2a75c37cca6ff1170182117e4138d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1676971779592,
+          "stop" : 1676971780019,
+          "duration" : 427
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 31, 'name': '查询单个私域创作者', 'remark': None, 'VariableOperation': None, 'interfaceId': 78, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'url': '${private_creatorLink}'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.id=sqlSearch(private_creator_base,[{create_person=${IPAdv_email}},{group_id=${IPAdv_groupId}},{creator_link=${private_creatorLink}}])', 'setDown': None, 'successCount': None}" ]
+      } ],
+      "uid" : "8f2a75c37cca6ff1170182117e4138d3"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

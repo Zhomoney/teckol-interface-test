@@ -1,0 +1,92 @@
+{
+  "total" : 8,
+  "items" : [ {
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e",
+    "name" : "testcase",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 24,
+      "unknown" : 0,
+      "total" : 31
+    }
+  }, {
+    "uid" : "14bba770449f4f874672048c5e776c17",
+    "name" : "/creatorBase/page",
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 16
+    }
+  }, {
+    "uid" : "40bf638f2fc85f2810e709a08c51c9fe",
+    "name" : "/advertiser/offer/page",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "1dfd075f1dc842a5d203b0e8d6ec85ad",
+    "name" : "/advertiser/workBench/count",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "666e0da370c5b106e924010fd35a5bf7",
+    "name" : "/creatorBase/Private/link",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "730842bb99b761e9c6558690b426843b",
+    "name" : "/user/login/adv",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "6764fae4bd7b082f28c36b944048f1a1",
+    "name" : "/user/getCoopInfo",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "4d29e98c1305c4c67c7828208381b47b",
+    "name" : "/user/getQuota",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

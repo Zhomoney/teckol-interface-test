@@ -1,0 +1,84 @@
+{
+  "uid" : "45f92f83902a4f44",
+  "name" : "工作台获取交易信息，检查邮件个数、offer个数、Trade个数",
+  "fullName" : "testcase#test_case_exec",
+  "historyId" : "a36a087bd31476d08629014e742aec6a",
+  "time" : {
+    "start" : 1676971750224,
+    "stop" : 1676971750869,
+    "duration" : 645
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: [value]responseValue:426 not equal to  verifyValue :500",
+  "statusTrace" : "test_info = {'AssertResBody': 'res.code=200;res.data.offerNum=sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${...PAdv_Id}},{group_id=${IPAdv_groupId}}]);', 'AssertResCode': 200, 'AssertType': 'equal', 'VariableOperation': None, ...}\n\n    @pytest.mark.parametrize('test_info', testCaseList)\n    def test_case_exec(test_info):\n        allure.dynamic.title(test_info['name'])\n        allure.dynamic.description(test_info['remark'])\n    \n        if test_info['commonCaseId']:\n            login(test_info['commonCaseId'])\n        code, method, name = getCode(test_info['interfaceId'])\n        allure.dynamic.suite(code)\n        body, code = getBody(test_info['reqBody'], code)\n        headers = getHeader(test_info['reqHeader'])\n        # 接口请求\n        url = config.BASEURL + code\n        if method == 'get':\n            if not body:\n                body = \"{}\"\n            body = json.loads(body)\n            response = requests.get(url, body, headers=headers)  # 此时的body需要为字典\n        else:\n            response = requests.request(method=method,\n                                        url=url,\n                                        data=body,\n                                        headers=headers)\n        # 校验statusCode\n        assert response.status_code == int(test_info['AssertResCode'])\n        # 校验responseData\n        resData = json.loads(response.text)\n>       verify(test_info['AssertResBody'], resData, 'str equal')\n\ntestcase.py:42: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nverifyMsg = 'res.code=200;res.data.offerNum=sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);..._groupId}}]);res.data.orderNum=sqlSearch(tecgo_order.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);'\nresData = {'code': 200, 'data': {'emailNum': 0, 'offerNum': 426, 'orderNum': 0}, 'msg': 'success'}\nOperationType = 'str equal'\n\n    def verify(verifyMsg, resData, OperationType):\n        '''\n        assertBody\n        :param verifyMsg:需要校验的数据str ：'res.data.email=xxx;res.code=xxx;'\n        :param resData: 返回的resData:字典\n        :param type: 暂无用处\n        :return:\n        '''\n        assertList = verifyMsg.split(';')\n        for i in assertList:\n            if i != '':\n                operation = '='\n                if '=' in i:\n                    operation = '='\n                elif ' IN ' in i:\n                    operation = ' IN '\n                elif ' CONTAINS ' in i:\n                    operation = ' CONTAINS '\n                oldKey = i.split(operation, 1)[0].strip()\n                verifyValue = i.split(operation, 1)[1].strip()\n                keyList = oldKey.split('.')\n                # 获取返回要校验的值\n                resValue = iterationValue(keyList, resData)\n                # 替换testcase verify的值\n                verifyValue = variableReplace(verifyValue)\n                if 'sqlSearch(' in verifyValue and ')' == verifyValue[-1]:\n                    verifyValue = SearchSql(verifyValue)\n    \n                if operation == '=':\n                    verifyValue = str(verifyValue)\n                    resValue = str(resValue)\n>                   assert verifyValue == resValue, \"[value]responseValue:\" + str(\n                        resValue) + \" not equal to  verifyValue :\" + str(\nE                       AssertionError: [value]responseValue:426 not equal to  verifyValue :500\n\ncommon.py:163: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: [value]responseValue:426 not equal to  verifyValue :500",
+    "statusTrace" : "test_info = {'AssertResBody': 'res.code=200;res.data.offerNum=sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${...PAdv_Id}},{group_id=${IPAdv_groupId}}]);', 'AssertResCode': 200, 'AssertType': 'equal', 'VariableOperation': None, ...}\n\n    @pytest.mark.parametrize('test_info', testCaseList)\n    def test_case_exec(test_info):\n        allure.dynamic.title(test_info['name'])\n        allure.dynamic.description(test_info['remark'])\n    \n        if test_info['commonCaseId']:\n            login(test_info['commonCaseId'])\n        code, method, name = getCode(test_info['interfaceId'])\n        allure.dynamic.suite(code)\n        body, code = getBody(test_info['reqBody'], code)\n        headers = getHeader(test_info['reqHeader'])\n        # 接口请求\n        url = config.BASEURL + code\n        if method == 'get':\n            if not body:\n                body = \"{}\"\n            body = json.loads(body)\n            response = requests.get(url, body, headers=headers)  # 此时的body需要为字典\n        else:\n            response = requests.request(method=method,\n                                        url=url,\n                                        data=body,\n                                        headers=headers)\n        # 校验statusCode\n        assert response.status_code == int(test_info['AssertResCode'])\n        # 校验responseData\n        resData = json.loads(response.text)\n>       verify(test_info['AssertResBody'], resData, 'str equal')\n\ntestcase.py:42: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nverifyMsg = 'res.code=200;res.data.offerNum=sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);..._groupId}}]);res.data.orderNum=sqlSearch(tecgo_order.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);'\nresData = {'code': 200, 'data': {'emailNum': 0, 'offerNum': 426, 'orderNum': 0}, 'msg': 'success'}\nOperationType = 'str equal'\n\n    def verify(verifyMsg, resData, OperationType):\n        '''\n        assertBody\n        :param verifyMsg:需要校验的数据str ：'res.data.email=xxx;res.code=xxx;'\n        :param resData: 返回的resData:字典\n        :param type: 暂无用处\n        :return:\n        '''\n        assertList = verifyMsg.split(';')\n        for i in assertList:\n            if i != '':\n                operation = '='\n                if '=' in i:\n                    operation = '='\n                elif ' IN ' in i:\n                    operation = ' IN '\n                elif ' CONTAINS ' in i:\n                    operation = ' CONTAINS '\n                oldKey = i.split(operation, 1)[0].strip()\n                verifyValue = i.split(operation, 1)[1].strip()\n                keyList = oldKey.split('.')\n                # 获取返回要校验的值\n                resValue = iterationValue(keyList, resData)\n                # 替换testcase verify的值\n                verifyValue = variableReplace(verifyValue)\n                if 'sqlSearch(' in verifyValue and ')' == verifyValue[-1]:\n                    verifyValue = SearchSql(verifyValue)\n    \n                if operation == '=':\n                    verifyValue = str(verifyValue)\n                    resValue = str(resValue)\n>                   assert verifyValue == resValue, \"[value]responseValue:\" + str(\n                        resValue) + \" not equal to  verifyValue :\" + str(\nE                       AssertionError: [value]responseValue:426 not equal to  verifyValue :500\n\ncommon.py:163: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cedc47618bc68ba0",
+      "name" : "stdout",
+      "source" : "cedc47618bc68ba0.txt",
+      "type" : "text/plain",
+      "size" : 324
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "/advertiser/workBench/count"
+  }, {
+    "name" : "suite",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "SK-20220714XDVX"
+  }, {
+    "name" : "thread",
+    "value" : "13476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_info",
+    "value" : "{'id': 13, 'name': '工作台获取交易信息，检查邮件个数、offer个数、Trade个数', 'remark': None, 'VariableOperation': None, 'interfaceId': 55, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.offerNum=sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);res.data.emailNum=sqlSearch(email_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);res.data.orderNum=sqlSearch(tecgo_order.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);', 'setDown': None, 'successCount': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "45f92f83902a4f44.json",
+  "parameterValues" : [ "{'id': 13, 'name': '工作台获取交易信息，检查邮件个数、offer个数、Trade个数', 'remark': None, 'VariableOperation': None, 'interfaceId': 55, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.offerNum=sqlSearch(offer_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);res.data.emailNum=sqlSearch(email_task.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);res.data.orderNum=sqlSearch(tecgo_order.count(1),[{created_by=${IPAdv_Id}},{group_id=${IPAdv_groupId}}]);', 'setDown': None, 'successCount': None}" ]
+}

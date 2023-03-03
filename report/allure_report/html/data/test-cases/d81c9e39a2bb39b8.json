@@ -1,0 +1,60 @@
+{
+  "uid" : "d81c9e39a2bb39b8",
+  "name" : "登录的手机号在数据库中不存在，接口返回10000，引导注册",
+  "fullName" : "testcase#test_case_exec",
+  "historyId" : "c36a21b282fda13692a3f313a3aa377f",
+  "time" : {
+    "start" : 1676971748038,
+    "stop" : 1676971748137,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "/user/login/adv"
+  }, {
+    "name" : "suite",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "SK-20220714XDVX"
+  }, {
+    "name" : "thread",
+    "value" : "13476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_info",
+    "value" : "{'id': 7, 'name': '登录的手机号在数据库中不存在，接口返回10000，引导注册', 'remark': None, 'VariableOperation': None, 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': '13112243465', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=10000;res.msg=用户名不存在，请先注册;', 'setDown': None, 'successCount': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d81c9e39a2bb39b8.json",
+  "parameterValues" : [ "{'id': 7, 'name': '登录的手机号在数据库中不存在，接口返回10000，引导注册', 'remark': None, 'VariableOperation': None, 'interfaceId': 326, 'commonCaseId': None, 'reqHeader': None, 'reqBody': {'email': '13112243465', 'password': '123456'}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=10000;res.msg=用户名不存在，请先注册;', 'setDown': None, 'successCount': None}" ]
+}

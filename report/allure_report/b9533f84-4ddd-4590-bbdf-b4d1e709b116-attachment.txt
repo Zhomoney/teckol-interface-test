@@ -1,0 +1,5 @@
+SELECT id FROM users where email="test_IP_adv@tec-do.com"
+SELECT email_flag FROM users where email="test_IP_adv@tec-do.com"
+SELECT phone_flag FROM users where email="test_IP_adv@tec-do.com"
+SELECT username FROM users where email="test_IP_adv@tec-do.com"
+SELECT count(id) FROM private_creator_base where create_person="test_IP_adv@tec-do.com" and group_id="7"

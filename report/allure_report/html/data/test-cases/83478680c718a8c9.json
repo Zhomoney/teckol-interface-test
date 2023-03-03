@@ -1,0 +1,76 @@
+{
+  "uid" : "83478680c718a8c9",
+  "name" : "获取用户配额数量检查",
+  "fullName" : "testcase#test_case_exec",
+  "historyId" : "d1f041289a13ed33ef88015825b7ca78",
+  "time" : {
+    "start" : 1676971750878,
+    "stop" : 1676971751467,
+    "duration" : 589
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c4fb25ab1a4c0c56",
+      "name" : "stdout",
+      "source" : "c4fb25ab1a4c0c56.txt",
+      "type" : "text/plain",
+      "size" : 254
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "/user/getQuota"
+  }, {
+    "name" : "suite",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "SK-20220714XDVX"
+  }, {
+    "name" : "thread",
+    "value" : "13476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_info",
+    "value" : "{'id': 14, 'name': '获取用户配额数量检查', 'remark': None, 'VariableOperation': None, 'interfaceId': 321, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;', 'setDown': None, 'successCount': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "83478680c718a8c9.json",
+  "parameterValues" : [ "{'id': 14, 'name': '获取用户配额数量检查', 'remark': None, 'VariableOperation': None, 'interfaceId': 321, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;', 'setDown': None, 'successCount': None}" ]
+}

@@ -1,0 +1,76 @@
+{
+  "uid" : "9349046b4a67dbe3",
+  "name" : "创作者分页数据，查询平台+多地区",
+  "fullName" : "testcase#test_case_exec",
+  "historyId" : "9884fa67e9eb6a415b6fa2a6a897443c",
+  "time" : {
+    "start" : 1676971764891,
+    "stop" : 1676971765998,
+    "duration" : 1107
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "431cde72a4ecc7a3",
+      "name" : "stdout",
+      "source" : "431cde72a4ecc7a3.txt",
+      "type" : "text/plain",
+      "size" : 254
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "/creatorBase/page"
+  }, {
+    "name" : "suite",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "SK-20220714XDVX"
+  }, {
+    "name" : "thread",
+    "value" : "13476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_info",
+    "value" : "{'id': 22, 'name': '创作者分页数据，查询平台+多地区', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'tiktok', 'regionCodes': ['GB', 'US']}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.regionCode IN [GB,US];res.data.records.39.regionCode IN [GB,US];', 'setDown': None, 'successCount': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9349046b4a67dbe3.json",
+  "parameterValues" : [ "{'id': 22, 'name': '创作者分页数据，查询平台+多地区', 'remark': None, 'VariableOperation': None, 'interfaceId': 94, 'commonCaseId': 1, 'reqHeader': {'authorization': 'Bearer ${token}', 'cpmsToken': '${cpmsToken}'}, 'reqBody': {'current': 1, 'size': 40, 'sort': 1, 'name': '', 'page': True, 'platform': 'tiktok', 'regionCodes': ['GB', 'US']}, 'AssertResCode': 200, 'AssertType': 'equal', 'AssertResBody': 'res.code=200;res.data.records.0.platform=tiktok;res.data.records.0.regionCode IN [GB,US];res.data.records.39.regionCode IN [GB,US];', 'setDown': None, 'successCount': None}" ]
+}
